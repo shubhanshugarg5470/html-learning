@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+            padding: 20px;
+        }
+        
+        /* List Styling */
+        ol, ul, dl {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        li {
+            margin: 5px 0;
+        }
+        ol {
+            list-style-type: decimal;
+        }
+        ul {
+            list-style-type: square;
+        }
+        dt {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        dd {
+            margin-left: 20px;
+            color: #555;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        h2 {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <!-- these are ways to show content as list -->
+     <!-- ordered list -->
+    <ol>
+        <li>this first line </li>
+        <li>this is second line</li>
+        <li>this is third line</li>
+    </ol>
+    <!-- unordered list -->
+    <ul>
+        <li>this is first line</li>
+        <li>this is second</li>
+        <li>this is third line</li>
+    </ul>
+    <!-- defination list -->
+    <dl>
+        <dt>
+            javascript
+        </dt>
+        <dd>
+            javascript is a object oriented programming language
+        </dd>
+    </dl>
+
+
+
+    <!-- these are the way to show content as table -->
+     <h2>indian player data</h2>
+     <table>
+        <thead>
+             <tr>
+                <th>player</th>
+                <th>runs</th>
+                <th>avg</th>
+                <th>strik rate</th>
+             </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.espncricinfo.com/cricketers/rohit-sharma-34102/bowling-batting-stats" target="_blank">rohit sharma</a></td>
+                <td>45</td>
+                <td>23</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.espncricinfo.com/cricketers/yuvraj-singh-36084/bowling-batting-stats" target="_blank">youraj singh</a></td>
+                <td>36</td>
+                <td>12</td>
+                <td>200</td>
+            </tr>
+        </tbody>
+     </table>
+
+</body>
+</html>
