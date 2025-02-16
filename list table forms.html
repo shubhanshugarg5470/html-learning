@@ -1,123 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 20px;
-            padding: 20px;
-        }
-        
-        /* List Styling */
-        ol, ul, dl {
-            background: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        li {
-            margin: 5px 0;
-        }
-        ol {
-            list-style-type: decimal;
-        }
-        ul {
-            list-style-type: square;
-        }
-        dt {
-            font-weight: bold;
-            color: #007BFF;
-        }
-        dd {
-            margin-left: 20px;
-            color: #555;
-        }
 
-        /* Table Styling */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #007BFF;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        h2 {
-            color: #007BFF;
-        }
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #eef1f7;
+        margin: 20px;
+        padding: 20px;
+        color: #333;
+      }
+      ol,
+      ul,
+      dl,
+      table,
+      form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      h2 {
+        text-align: center;
+        color: #2c3e50;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+      }
+      th {
+        background-color: #3498db;
+        color: white;
+      }
+      a {
+        text-decoration: none;
+        color: #2980b9;
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      label {
+        font-weight: bold;
+        color: #2c3e50;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #34495e;
+      }
+      button {
+        background-color: #27ae60;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #219150;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- these are ways to show content as list -->
-     <!-- ordered list -->
+    <!-- ordered list -->
     <ol>
-        <li>this first line </li>
-        <li>this is second line</li>
-        <li>this is third line</li>
+      <li>this first line</li>
+      <li>this is second line</li>
+      <li>this is third line</li>
     </ol>
     <!-- unordered list -->
     <ul>
-        <li>this is first line</li>
-        <li>this is second</li>
-        <li>this is third line</li>
+      <li>this is first line</li>
+      <li>this is second</li>
+      <li>this is third line</li>
     </ul>
     <!-- defination list -->
     <dl>
-        <dt>
-            javascript
-        </dt>
-        <dd>
-            javascript is a object oriented programming language
-        </dd>
+      <dt>javascript</dt>
+      <dd>javascript is a object oriented programming language</dd>
     </dl>
 
-
-
     <!-- these are the way to show content as table -->
-     <h2>indian player data</h2>
-     <table>
-        <thead>
-             <tr>
-                <th>player</th>
-                <th>runs</th>
-                <th>avg</th>
-                <th>strik rate</th>
-             </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><a href="https://www.espncricinfo.com/cricketers/rohit-sharma-34102/bowling-batting-stats" target="_blank">rohit sharma</a></td>
-                <td>45</td>
-                <td>23</td>
-                <td>123</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.espncricinfo.com/cricketers/yuvraj-singh-36084/bowling-batting-stats" target="_blank">youraj singh</a></td>
-                <td>36</td>
-                <td>12</td>
-                <td>200</td>
-            </tr>
-        </tbody>
-     </table>
+    <h2>indian player data</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>player</th>
+          <th>runs</th>
+          <th>avg</th>
+          <th>strik rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a
+              href="https://www.espncricinfo.com/cricketers/rohit-sharma-34102/bowling-batting-stats"
+              target="_blank"
+              >rohit sharma</a
+            >
+          </td>
+          <td>45</td>
+          <td>23</td>
+          <td>123</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="https://www.espncricinfo.com/cricketers/yuvraj-singh-36084/bowling-batting-stats"
+              target="_blank"
+              >youraj singh</a
+            >
+          </td>
+          <td>36</td>
+          <td>12</td>
+          <td>200</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- forms in html
+      action attributes tells that the data of this forms stores where -->
+    <div>
+      <form action="">
+        <div>
+          <label for="name">enter your uniqe name</label>
+          <input id="name" type="text" placeholder="enter name" />
+        </div>
+        <div>
+          <label for="username">username</label>
+          <input id="username" type="text" placeholder="enter username" />
+        </div>
+        <div>
+          <label for="mobil">mobile number</label>
+          <input
+            id="mobil"
+            type="tel"
+            placeholder="enter 10 digit mobile number"
+          />
+        </div>
+        <div>
+          <label for="email">email</label>
+          <input id="email" type="email" placeholder="enter email" />
+        </div>
+        <div>
+          <label for="dob"> date of birth</label>
+          <input id="dob" type="date" placeholder="dd/mm/yyyy" />
+        </div>
+        <div>
+          <label for="password">create storng password</label>
+          <input id="password" type="password" placeholder="enter password" />
+        </div>
+        <div>
+          <label for="gender">select your gender</label>
+          <select name="" id="gender">
+            <option value="" disabled>select gender</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+        <div>
+          <p>select your gender</p>
+          <label for="male">male</label>
+          <input id="male" type="radio" name="gender" value="male" />
 
-</body>
+          <label for="female">female</label>
+          <input id="female" type="radio" name="gender" value="female" />
+
+          <label for="other">other</label>
+          <input id="other" type="radio" name="gender" value="other" />
+        </div>
+        <div>
+          <p>write small discription about you</p>
+          <textarea rows="3" name="discription" id=""></textarea>
+        </div>
+        <button type="submit">submit form</button>
+      </form>
+    </div>
+    <div>
+      <video
+        src="https://youtu.be/k2DSi1zGEc8?si=NHbz_VePqYmyoL3U"
+        autoplay
+        muted
+        controls
+      >
+        sorry unable to play 
+      </video>
+    </div>
+  </body>
 </html>
