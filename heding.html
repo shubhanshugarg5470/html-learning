@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>html learning</title>
     <link rel="stylesheet" href="style.css" />
-    <script>document.createElement</script>
+    <script>
+      document.createElement;
+    </script>
   </head>
   <body>
     this is the visible part of the webpage all elements are built up by using
     tags opening tags and closing tags elements have attributes for enhancing
     functionality 1. globle attributes 2. specific attributes Here’s a list of
-    all global attributes in  id- for <br> giving identity or name for any
-    elements , each elements have own id class- for giving identity to multiple
-    elements , use this to grouping elements and give all those elements same
-    style or behaviour through class style, title, lang, dir, data-*, hidden,
-    tabindex, accesskey, draggable ,spellcheck, contenteditable ,autocomplete,
-     <br>role, aria-* nonce ,translate ,These attributes can be used with any HTML
-    element.
+    all global attributes in id- for <br />
+    giving identity or name for any elements , each elements have own id class-
+    for giving identity to multiple elements , use this to grouping elements and
+    give all those elements same style or behaviour through class style, title,
+    lang, dir, data-*, hidden, tabindex, accesskey, draggable ,spellcheck,
+    contenteditable ,autocomplete, <br />role, aria-* nonce ,translate ,These
+    attributes can be used with any HTML element.
     <!-- br tag is a self cosing tag to show line break -->
-
 
     <!-- for adding web links in web page or put any file from the server that may downloadable -->
     <a href="https://chatgpt.com/c/67aaf2ea-72ec-800e-9997-6fb7676f9ddc"
@@ -28,7 +29,8 @@
     </a>
     <!-- some attributes of this tag 
      if we want that this link open in next tab so use attributes target-->
-     <a href="https://chatgpt.com/" target="_blank">try chat gpt</a>
+    <a href="https://chatgpt.com/" target="_blank">try chat gpt</a>
+    <!-- we can also link same page reference by simly refering  id of perticuler point -->
 
     <!-- for writting heading in webpage or for seo  -->
     <h1>to write heading ,h1 is the most important heading for seo</h1>
@@ -47,8 +49,6 @@
       delectus! Vel!
     </p>
 
-    
-    
     <!-- for image  -->
     <!-- these all are image attributes
       src (URL of the image)
@@ -59,38 +59,75 @@ loading (Lazy loading option)
 srcset & sizes (Responsive images for different screen sizes)
 usemap & ismap (Image maps) -->
     <img
-      src="https://wallpapers.com/images/high/rohit-sharma-candid-in-game-shot-lv0joxybv4z890em.webp"
-      alt="shubhanshu garg"
+      src="https://wallpapers.com/images/high/rohit-sharma-candid-in-game-shot-lv0joxybv4z890em."
+      alt="no image found" 
       width="123"
     />
 
-
-
     <!-- bold italic and underline tags -->
-     <b>to write bold letter in page</b>
-     <i>to write italic letters</i>
-     <u>to write letters with underline</u>
+    <b>to write bold letter in page</b>
+    <!-- for making any text bold we can also use strong tag this is more sementic  -->
+    <strong>this is strong</strong>
+    <i>to write italic letters</i>
+    <!-- we can also use em for better sementic -->
+    <em>this is emphasice tag</em>
+    <u>to write letters with underline</u>
 
-<!-- big and small tag -->
-     <big>to show things big</big>
+    <!-- big and small tag -->
+    <big>to show things big</big>
     <small>to show things small</small>
 
-
     <!-- to draw horizontle line -->
-     <hr>this is hr tag
+    <hr />
+    this is hr tag
 
-     <!-- subscript and superscript -->
-      x <sup>4</sup>+ x <sup>2</sup>- 4
-      h <sub>2</sub>0
+    <!-- subscript and superscript -->
+    x <sup>4</sup>+ x <sup>2</sup>- 4 h <sub>2</sub>0
 
-
-      <!-- when we write something using p tag so html always ignore extra spaces but
+    <!-- when we write something using p tag so html always ignore extra spaces but
        if we want to show as it is so we can use pre tag -->
-       <pre>  reprehenderit consectetur,
+    <pre>
+  reprehenderit consectetur,
         
         vmus 
         placeat atque 
         tempora
-         quidem.</pre>
+         quidem.</pre
+    >
+
+    <!-- del and mark tag -->
+    <del> this is del tag</del>
+    <mark>this is mark tag</mark>
+
+    <!-- we can give style to any elements in these ways  -->
+    <h1 style="background-color: aqua">
+      as an attribute for any elements this is called inline css
+    </h1>
+    <!-- or we can write css inside style tag elements  -->
+    <style>
+      h1 {
+        background: #000;
+      }
+    </style>
+    <!--  or also we can write css in seperate file and add it inside link tag -->
+
+    <!-- for giveing quete -->
+    <q> honesty is a best policy </q>
+    <!-- one more way for seo pov -->
+    <blockquote cite="mahatma gandhi">karo ya maro</blockquote>
+
+    <!-- for showing full form of something  or want to show something when cursor point in it -->
+    <p>
+      <em> tim burner lee</em> invented
+      <abbr title="hyper text murkup language">html</abbr>
+    </p>
+
+
+    <!-- address and cite tag -->
+     <address>
+      <a href="googlemap">maihar satna mp </a>
+     </address>
+     <p>One of the best books I’ve read is <cite>The Alchemist</cite> by Paulo Coelho.</p>
+
   </body>
 </html>
