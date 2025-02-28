@@ -1,0 +1,15 @@
+/* there are multiple ways to add css to html page most common way is to write css in seperate file */
+
+/* there are two portion in css
+first - selector - to select an element
+there are multiple way to select
+- universal selector by using star* , this can overwrite all browser default rules
+-direct element select ( h1 , div)
+-through class using . dot ( .navbar) it is the brodly used method 
+-through id using # ( # navbar) its broudly used in javascript
+-we can also select multiple elements by using , ( h1 , div )
+-we can select elements and class , id both like this ( p.heading or p#heading)
+
+second - what to do with selected part by writing css rule */
+
+

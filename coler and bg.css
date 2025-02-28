@@ -1,0 +1,22 @@
+/* there are ways to give coler value
+- direct coler name
+- rgb value
+- hex value
+-hsl value (hue saturation lightness
+*/
+
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzk09Xv1dZS4HEHSPgXwvAd0Oag4pJ3122oQ&s);
+    background-repeat: no-repeat;  
+    /* also we can repeat it horizontilly and virtically */
+    
+}
+
+.red{
+    background: red;
+
+}
+
+.green{
+    color: green;
+}
